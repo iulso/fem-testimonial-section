@@ -1,18 +1,11 @@
 @use '../util' as *;
 
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+.attribution {
+  // padding-bottom: rem(5);
+  font-size: rem(11);
+  text-align: center;
 
-  .attribution {
-    padding-bottom: rem(5);
-    font-size: rem(11);
-    text-align: center;
-
-    a {
-      color: var(--main);
-    }
+  a {
+    color: var(--main);
   }
 }

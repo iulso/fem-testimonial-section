@@ -1,5 +1,9 @@
 @use '../util' as *;
 
+.testimonials {
+  margin-bottom: rem(110);
+}
+
 .testimonials__top {
   @include breakpoint(large) {
     display: flex;
