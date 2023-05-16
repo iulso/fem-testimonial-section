@@ -6,6 +6,7 @@
   align-items: center;
 
   margin: rem(70) 0;
+  height: 100vh;
 
   @include breakpoint(medium) {
     margin: rem(90) 0;
