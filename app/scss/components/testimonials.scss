@@ -1,15 +1,21 @@
 @use '../util' as *;
 
-.testimonials {
+.testimonials__top {
+  @include breakpoint(large) {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: rem(20);
+  }
 }
 
 .testimonials__text {
   margin-bottom: rem(35);
   text-align: center;
 
-  h1 {
-  }
-  p {
+  @include breakpoint(large) {
+    width: 40%;
+    text-align: left;
   }
 }
 
@@ -30,6 +36,10 @@
     & > *:nth-child(3) {
       align-self: flex-end;
     }
+  }
+
+  @include breakpoint(large) {
+    width: 50%;
   }
 }
 
@@ -58,9 +68,6 @@
     }
   }
 
-  &-icon {
-  }
-
   &-text {
     font-weight: var(--font-weight-medium);
     color: var(--main);
@@ -78,16 +85,29 @@
   @include breakpoint(medium) {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-
-    & > * {
-      margin-right: rem(20);
-    }
+    justify-content: space-around;
   }
 
   @include breakpoint(large) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+    height: rem(230);
+
     & > *:not(:last-child) {
       margin-bottom: 0;
+    }
+
+    & > *:nth-child(1) {
+      align-self: flex-start;
+    }
+
+    & > *:nth-child(2) {
+      align-self: center;
+    }
+
+    & > *:nth-child(3) {
+      align-self: flex-end;
     }
   }
 }
@@ -103,7 +123,7 @@
   color: var(--white);
 
   @include breakpoint(medium) {
-    max-width: rem(255);
+    max-width: 15rem;
   }
 }
 

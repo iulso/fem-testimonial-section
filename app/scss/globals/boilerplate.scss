@@ -15,4 +15,15 @@ html {
 
 body {
   margin: 0;
+  background: url('https://iulso.github.io/fem-testimonial-section/images/bg-pattern-top-mobile.svg')
+      left top no-repeat,
+    url('https://iulso.github.io/fem-testimonial-section/images/bg-pattern-bottom-mobile.svg')
+      right bottom no-repeat;
+
+  @include breakpoint(medium) {
+    background: url('https://iulso.github.io/fem-testimonial-section/images/bg-pattern-top-desktop.svg')
+        left top no-repeat,
+      url('https://iulso.github.io/fem-testimonial-section/images/bg-pattern-bottom-desktop.svg')
+        right bottom no-repeat;
+  }
 }
