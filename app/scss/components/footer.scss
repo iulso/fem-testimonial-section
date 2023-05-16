@@ -1,11 +1,10 @@
 @use '../util' as *;
 
 .attribution {
-  // padding-bottom: rem(5);
   font-size: rem(11);
   text-align: center;
 
   a {
-    color: var(--main);
+    color: var(--accent);
   }
 }
