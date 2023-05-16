@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+.footer {
+  display: none; // TODO
+
+  .attribution {
+    text-align: center;
+    font-size: rem(11);
+
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+}

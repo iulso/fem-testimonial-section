@@ -1,0 +1,130 @@
+@use '../util' as *;
+
+.testimonials {
+}
+
+.testimonials__text {
+  margin-bottom: rem(35);
+  text-align: center;
+
+  h1 {
+  }
+  p {
+  }
+}
+
+.testimonials__stars {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem(35);
+
+  & > *:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+
+  @include breakpoint(medium) {
+    & > *:nth-child(2) {
+      align-self: center;
+    }
+
+    & > *:nth-child(3) {
+      align-self: flex-end;
+    }
+  }
+}
+
+.testimonials__star {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: rem(5);
+  overflow: hidden;
+  padding: rem(10) 0;
+  background: var(--main-desaturated-2);
+
+  & > *:not(:last-child) {
+    margin-bottom: rem(5);
+  }
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    padding-left: rem(25);
+    width: 85%;
+
+    & > *:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: rem(25);
+    }
+  }
+
+  &-icon {
+  }
+
+  &-text {
+    font-weight: var(--font-weight-medium);
+    color: var(--main);
+  }
+}
+
+.testimonials__quotes {
+  display: flex;
+  flex-direction: column;
+
+  & > *:not(:last-child) {
+    margin-bottom: rem(15);
+  }
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > * {
+      margin-right: rem(20);
+    }
+  }
+
+  @include breakpoint(large) {
+    & > *:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.testimonials__card {
+  display: flex;
+  flex-direction: column;
+
+  border-radius: rem(5);
+  overflow: hidden;
+  padding: rem(30);
+  background: var(--main);
+  color: var(--white);
+
+  @include breakpoint(medium) {
+    max-width: rem(255);
+  }
+}
+
+.testimonials__user {
+  display: flex;
+  margin-bottom: rem(20);
+
+  &-img {
+    border-radius: 50%;
+    margin-right: rem(20);
+    width: rem(35);
+    height: rem(35);
+  }
+
+  &-text {
+    &--name {
+      font-weight: var(--font-weight-medium);
+    }
+
+    &--type {
+      color: var(--accent);
+    }
+  }
+}

@@ -1,0 +1,18 @@
+@use '../util/' as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: rem(60) 0;
+
+  @include breakpoint(medium) {
+    margin: 0;
+    height: 100vh;
+  }
+}
+
+main {
+  max-width: 90%;
+}

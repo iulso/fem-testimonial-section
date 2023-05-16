@@ -1,0 +1,22 @@
+@use '../util' as *;
+
+body {
+  font-family: var(--font-league-spartan);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-default);
+  color: var(--main-desaturated-1);
+}
+
+h1 {
+  margin-top: 0;
+  line-height: 0.8;
+  font-size: rem(40);
+  font-weight: var(--font-weight-bold);
+  color: var(--main);
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
